@@ -6,23 +6,36 @@
 
     </head>
     <body>
-        <div id="attributes">
-            <!-- Change these into a different bar system-->
-            <div id="health">Health</div>
-            <div id="magicka">Magicka</div>
-            <div id="stamina">Stamina</div>
+        <!-- Set up the skyrim style containers-->
+        <div id-"level-container">
+            <h2>Level</h2>
+            <p id="level">1</p>
         </div>
-        <!-- create a skills section and filled it with filler-->
-        <div id="skills">
-            <select id="skill-select">
-                <option value="one-handed">One-Handed</option>
-                <option value="sneak">Sneak</option>
-                <option value="conjuration">Conjuration</option>
-            </select>
-            <!-- create a perks section-->
-            <div id="perks"></div>
-        </div>
-    <script src="scripts.js"></script>
 
+        <!--Use progress to represent the progress of the bars-->
+        <div id=""experience-container">
+            <h2>Experience</h2>
+            <progress id="experience" max="100" value="0"></progress>
+       </div>
+
+       <div id="attributes-container">
+        <h2>Attributes</h2>
+        <div id="health">
+            <h3>Health</h3>
+            <progress max="100" value="100"></progress>
+        </div>
+        <div id="magicka">
+            <h3>Magicka</h3>
+            <progress max="100" value="100"></progress>
+        </div>
+        <div id="stamina">
+            <h3>Stamina</h3>
+            <progress max="100" value="100"></progress>
+        </div>
+
+       </div>
+
+
+     <script src="scripts.js"></script>
     </body>
 </html>
