@@ -6,36 +6,48 @@
 
     </head>
     <body>
-        <!-- Set up the skyrim style containers-->
-        <div id-"level-container">
-            <h2>Level</h2>
-            <p id="level">1</p>
-        </div>
-
-        <!--Use progress to represent the progress of the bars-->
-        <div id=""experience-container">
-            <h2>Experience</h2>
-            <progress id="experience" max="100" value="0"></progress>
-       </div>
-
-       <div id="attributes-container">
-        <h2>Attributes</h2>
-        <div id="health">
-            <h3>Health</h3>
-            <progress max="100" value="100"></progress>
-        </div>
-        <div id="magicka">
-            <h3>Magicka</h3>
-            <progress max="100" value="100"></progress>
-        </div>
-        <div id="stamina">
-            <h3>Stamina</h3>
-            <progress max="100" value="100"></progress>
-        </div>
-
-       </div>
-
-
+        <header>
+            <div id="user-info">
+                <span id="user-name">User Name</span>
+                <span id="level">Level: 1</span>
+                <span id="race">Race: Human</span>
+            </div>
+    
+            <div id="attributes-container">
+                <div id="health">
+                    <span>Health</span>
+                    <progress max="100" value="100"></progress>
+                </div>
+                <div id="magicka">
+                    <span>Magicka</span>
+                    <progress max="100" value="100"></progress>
+                </div>
+                <div id="stamina">
+                    <span>Stamina</span>
+                    <progress max="100" value="100"></progress>
+                </div>
+            </div>
+        </header>
+    
+        <main>
+            <div id="skills-container">
+                <div class="skill">
+                    <span>Skill Name 1</span>
+                    <progress max="100" value="50"></progress>
+                </div>
+                <div class="skill">
+                    <span>Skill Name 2</span>
+                    <progress max="100" value="60"></progress>
+                </div>
+                <div class="skill">
+                    <span>Skill Name 3</span>
+                    <progress max="100" value="70"></progress>
+                </div>
+                <!-- More skills would go here -->
+            </div>
+        </main>
+        <button id="previous-skill">Previous Skill</button>
+        <button id="next-skill">Next Skill</button>
      <script src="scripts.js"></script>
     </body>
 </html>
